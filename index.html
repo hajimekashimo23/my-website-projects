@@ -3,38 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Mini Projects</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: linear-gradient(135deg, #89f7fe, #66a6ff);
-      color: #333;
-      padding: 50px;
-    }
-    h1 {
-      margin-bottom: 40px;
-    }
-    a {
-      display: inline-block;
-      margin: 20px;
-      padding: 15px 30px;
-      font-size: 18px;
-      text-decoration: none;
-      color: white;
-      background: #0077ff;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    a:hover {
-      background: #0055aa;
-    }
-  </style>
+  <title>My Website Projects</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🚀 Welcome to My Website</h1>
-  <p>Select a project:</p>
-  <a href="egg/egg_index.html">🥚 Egg Timer</a>
-  <a href="weather/weather_index.html">🌦️ Weather Dashboard</a>
+  <!-- Navigation -->
+  <header>
+    <h1>My Website Projects</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="egg/egg_index.html">Boiled Egg Timer</a>
+      <a href="weather/weather_index.html">Weather Dashboard</a>
+    </nav>
+  </header>
+
+  <!-- Projects Showcase -->
+  <main>
+    <section class="projects">
+      <div class="card">
+        <h2>🥚 Boiled Egg Timer</h2>
+        <p>Choose soft, medium, or hard boiled egg with a fun interactive timer.</p>
+        <a href="egg/egg_index.html" class="btn">Go to Project</a>
+      </div>
+
+      <div class="card">
+        <h2>🌦 Weather Dashboard</h2>
+        <p>Check real-time weather conditions anywhere in the world.</p>
+        <a href="weather/weather_index.html" class="btn">Go to Project</a>
+      </div>
+
+      <!-- Future projects go here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>🚀 Built with ❤️ by Me</p>
+  </footer>
 </body>
 </html>
