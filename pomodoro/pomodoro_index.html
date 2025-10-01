@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pomodoro_style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="pomodoro_index.html" class="active">🍅 Pomodoro</a>
+    </nav>
+  </header>
+
+  <main class="card">
+    <h1>🍅 Pomodoro Timer</h1>
+
+    <div class="mode-row">
+      <div class="mode-label" id="modeLabel">Work</div>
+      <div class="session">Sessions: <span id="sessionCount">0</span></div>
+    </div>
+
+    <div class="timer" id="timerDisplay">25:00</div>
+
+    <div class="progress-wrap" aria-hidden="true">
+      <div id="progress" class="progress"></div>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn" class="muted">Pause</button>
+      <button id="resetBtn" class="muted">Reset</button>
+    </div>
+
+    <form id="durForm" class="durations" onsubmit="return false;">
+      <label>
+        Work (min)
+        <input type="number" id="workMin" min="1" value="25" />
+      </label>
+      <label>
+        Break (min)
+        <input type="number" id="breakMin" min="1" value="5" />
+      </label>
+      <button id="applyBtn" class="small">Apply</button>
+    </form>
+
+    <p class="hint">When a work session finishes it automatically switches to a break.</p>
+  </main>
+
+  <script src="pomodoro_script.js"></script>
+</body>
+</html>
