@@ -7,18 +7,33 @@
   <link rel="stylesheet" href="egg_style.css">
 </head>
 <body>
-  <h1>🥚 Boiled Egg Timer</h1>
-  <div class="egg" id="egg"></div>
+  <!-- Navigation -->
+  <header>
+    <h1>🥚 Boiled Egg Timer</h1>
+    <nav>
+      <a href="../index.html" class="nav-btn">🏠 Home</a>
+      <a href="../pomodoro/pomodoro_index.html" class="nav-btn">🍅 Pomodoro Timer</a>
+      <a href="../weather/weather_index.html" class="nav-btn">🌦 Weather Dashboard</a>
+    </nav>
+  </header>
 
-  <div class="buttons">
-    <button onclick="startTimer(4)">Soft Egg (4 min)</button>
-    <button onclick="startTimer(7)">Medium Egg (7 min)</button>
-    <button onclick="startTimer(10)">Hard Egg (10 min)</button>
-  </div>
+  <!-- Egg Timer App -->
+  <main>
+    <div class="egg" id="egg"></div>
 
-  <div id="timer">⏱ 0:00</div>
+    <div class="buttons">
+      <button onclick="startTimer(4)">Soft Egg (4 min)</button>
+      <button onclick="startTimer(7)">Medium Egg (7 min)</button>
+      <button onclick="startTimer(10)">Hard Egg (10 min)</button>
+    </div>
+
+    <div id="timer">⏱ 0:00</div>
+  </main>
+
+  <footer>
+    <p>🚀 Built with ❤️ by Me</p>
+  </footer>
 
   <script src="egg_script.js"></script>
-  <a href="../index.html" class="back-btn">⬅ Back to Home</a>
 </body>
 </html>
