@@ -1,0 +1,54 @@
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Pet emoji */
+.pet {
+  font-size: 100px;
+  margin: 20px;
+}
+
+/* Stats section */
+.stats {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Button colors */
+.feed { background: #ffcc70; }
+.play { background: #70ffb2; }
+.sleep { background: #70aaff; color: white; }
+
+
+nav .nav-btn:hover {
+  background: #ff4757;
+  transform: scale(1.05);
+}
