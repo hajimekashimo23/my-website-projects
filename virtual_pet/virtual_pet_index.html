@@ -3,24 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Virtual Pet</title>
+  <title>🐾 Virtual Pet Game</title>
   <link rel="stylesheet" href="virtual_pet.css">
 </head>
 <body>
-  <h1>🐶 My Virtual Pet 🐶</h1>
+  <div id="game-container">
+    <h1>🐶 My Virtual Pet</h1>
+    
+    <!-- Background -->
+    <div id="environment"></div>
 
-  <div class="pet">🐕</div>
+    <!-- Pet -->
+    <div class="pet" id="pet">🐶</div>
+    
+    <!-- Pet Info -->
+    <div class="pet-info">
+      <p>Name: <span id="petName">Buddy</span></p>
+      <p>Level: <span id="petLevel">1</span></p>
+      <p>Age: <span id="petAge">0</span> days</p>
+    </div>
 
-  <div class="stats">
-    <p>Hunger: <span id="hunger">100</span></p>
-    <p>Happiness: <span id="happiness">100</span></p>
-    <p>Energy: <span id="energy">100</span></p>
-  </div>
+    <!-- Stats -->
+    <div class="stats">
+      <p>🍗 Hunger: <span id="hunger">100</span></p>
+      <p>😊 Happiness: <span id="happiness">100</span></p>
+      <p>⚡ Energy: <span id="energy">100</span></p>
+    </div>
 
-  <div class="actions">
-    <button class="feed" onclick="feedPet()">Feed 🍖</button>
-    <button class="play" onclick="playWithPet()">Play 🎾</button>
-    <button class="sleep" onclick="sleepPet()">Sleep 😴</button>
+    <!-- Controls -->
+    <div class="controls">
+      <button onclick="feedPet()">Feed 🍗</button>
+      <button onclick="playWithPet()">Play 🎾</button>
+      <button onclick="sleepPet()">Sleep 💤</button>
+    </div>
+
+    <!-- Background music -->
+    <audio id="bgMusic" loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
   </div>
 
   <script src="virtual_pet.js"></script>
